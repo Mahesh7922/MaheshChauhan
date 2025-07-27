@@ -22,23 +22,51 @@ body {
 
 .layout {
   display: flex;
-  flex-direction: row;  /* Changed from column to row */
+  flex-direction: row;
   height: 100vh;
 }
 
 .card-section {
-  flex: 4;  /* Reduced from previous value */
-  min-width: 40%;
-  height: 100vh;
-  overflow: hidden;
+  flex: 4;
+  display: block; /* Default visible on desktop */
 }
 
 .terminal-section {
-  flex: 6;  /* Increased from previous value */
-  min-width: 60%;
+  flex: 6;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  
+  .card-section {
+    display: none; /* Hide ID Card on mobile */
+  }
+  
+  .terminal-section {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-section {
+    flex: 5;
+  }
+  
+  .terminal-section {
+    flex: 5;
+  }
+}
+
+.card-section {
+  min-width: 40%;
   height: 100vh;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
 }
 
 .terminal-section {
@@ -83,6 +111,35 @@ body {
   
   .card-section.loaded {
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 769px) {
+  .layout {
+    flex-direction: row;
+  }
+  
+  .card-section {
+    flex: 3;  /* Reduced from previous 4 */
+    min-width: 35%;
+  }
+  
+  .terminal-section {
+    flex: 7;  /* Increased from previous 6 */
+    min-width: 65%;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-section {
+    flex: 2;
+    min-width: 30%;
+  }
+  
+  .terminal-section {
+    flex: 8;
+    min-width: 70%;
   }
 }
 
