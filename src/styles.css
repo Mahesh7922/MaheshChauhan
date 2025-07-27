@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;  /* Changed from column to row */
+  height: 100vh;
+}
+
+.card-section {
+  flex: 4;  /* Reduced from previous value */
+  min-width: 40%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.terminal-section {
+  flex: 6;  /* Increased from previous value */
+  min-width: 60%;
+  height: 100vh;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.terminal-section {
+  flex: 1;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.terminal-section.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-section {
+  width: 50vw;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+  position: relative;
+  z-index: 0;
+}
+
+.card-section.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .terminal-section {
+    height: 60vh;
+    padding: 1rem;
+  }
+  
+  .card-section {
+    width: 100vw;
+    height: 40vh;
+    transform: translateY(20px);
+  }
+  
+  .card-section.loaded {
+    transform: translateY(0);
+  }
+}
+
+/* Glowing effect */
+.terminal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 100px 10px rgba(0, 255, 136, 0.1);
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 8px;
+}
