@@ -261,19 +261,22 @@
   overflow-anchor: auto;
 }
 
-.terminal-container {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-.input-container {
-  position: sticky;
-  bottom: 0;
-  background: #1a1a1a;
-  padding: 10px 0;
-}
-
-.input-line {
-  margin-top: auto; /* Pushes input to bottom */
+@media (max-width: 768px) {
+  .terminal-container {
+    padding-bottom: 60px; /* Space for input */
+  }
+  
+  .input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: #1a1a1aee;
+    backdrop-filter: blur(5px);
+  }
+  
+  .input-line {
+    min-height: 48px; /* Better touch target */
+  }
 }
