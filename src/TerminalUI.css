@@ -264,6 +264,8 @@
 @media (max-width: 768px) {
   .terminal-container {
     padding-bottom: 80px; /* Increased space for lifted input */
+    scroll-padding-bottom: 100px; /* Reserve space for input */
+    overscroll-behavior: contain;
   }
   
   .input-container {
@@ -278,5 +280,28 @@
     padding: 8px 12px;
     border: 1px solid #333;
     border-radius: 8px;
+  }
+  
+  .terminal-container {
+    min-height: 150vh;
+    padding-bottom: 150px;
+  }
+  
+  .terminal-content::after {
+    content: '';
+    display: block;
+    height: 100px;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .terminal-container {
+      min-height: 200vh;
+      padding-bottom: 200px;
+    }
+    
+    .input-container {
+      pointer-events: auto; /* Allow through-scroll */
+    }
   }
 }
