@@ -263,20 +263,20 @@
 
 @media (max-width: 768px) {
   .terminal-container {
-    padding-bottom: 60px; /* Space for input */
+    padding-bottom: 80px; /* Increased space for lifted input */
   }
   
   .input-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background: #1a1a1aee;
-    backdrop-filter: blur(5px);
+    bottom: 20px; /* Raise from absolute bottom */
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
   }
   
   .input-line {
-    min-height: 48px; /* Better touch target */
+    min-height: 50px;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
   }
 }
