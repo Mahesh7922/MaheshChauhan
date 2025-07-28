@@ -260,3 +260,20 @@
 .terminal-content > *:last-child {
   overflow-anchor: auto;
 }
+
+.terminal-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.input-container {
+  position: sticky;
+  bottom: 0;
+  background: #1a1a1a;
+  padding: 10px 0;
+}
+
+.input-line {
+  margin-top: auto; /* Pushes input to bottom */
+}
