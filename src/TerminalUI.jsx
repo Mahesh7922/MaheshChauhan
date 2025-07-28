@@ -95,17 +95,17 @@ export default function TerminalUI() {
         <div className="help-command">
           <p>Available commands:</p>
           <ul>
-            <li><strong>help</strong> - Show available commands</li>
-            <li><strong>about</strong> - Display basic information about me</li>
-            <li><strong>education</strong> - Show my educational background</li>
-            <li><strong>skills</strong> - List my technical skills</li>
-            <li><strong>projects</strong> - Display my projects</li>
-            <li><strong>experience</strong> - Show my work experience</li>
-            <li><strong>certifications</strong> - List my certifications</li>
-            <li><strong>achievements</strong> - Display my achievements</li>
-            <li><strong>contact</strong> - Show contact information</li>
-            <li><strong>resume</strong> - Download my resume</li>
-            <li><strong>clear</strong> - Clear the terminal</li>
+            <li><strong style={{color: 'lightgreen'}}>help</strong> - Show available commands</li>
+            <li><strong style={{color: 'lightgreen'}}>about</strong> - Display basic information about me</li>
+            <li><strong style={{color: 'lightgreen'}}>education</strong> - Show my educational background</li>
+            <li><strong style={{color: 'lightgreen'}}>skills</strong> - List my technical skills</li>
+            <li><strong style={{color: 'lightgreen'}}>projects</strong> - Display my projects</li>
+            <li><strong style={{color: 'lightgreen'}}>experience</strong> - Show my work experience</li>
+            <li><strong style={{color: 'lightgreen'}}>certifications</strong> - List my certifications</li>
+            <li><strong style={{color: 'lightgreen'}}>achievements</strong> - Display my achievements</li>
+            <li><strong style={{color: 'lightgreen'}}>contact</strong> - Show contact information</li>
+            <li><strong style={{color: 'lightgreen'}}>resume</strong> - Download my resume</li>
+            <li><strong style={{color: 'lightgreen'}}>clear</strong> - Clear the terminal</li>
           </ul>
         </div>
       )
@@ -120,7 +120,7 @@ export default function TerminalUI() {
  |_|  |_|\\__,_|_| |_|\\___||___/_| |_|\\____|_| |_|\\__,_|\\__,_|_| |_|\\__,_|_| |_|
         `}</div>
         <p>I'm a B.Tech student in AI & Data Science with a passion for web development and AI applications.</p>
-        <p>Type <code>help</code> to see what else you can learn about me!</p>
+        <p>Type <code style={{color: 'lightgreen', fontWeight: 'bold'}}>help</code> to see what else you can learn about me!</p>
       </div>
     ),
     education: () => {
