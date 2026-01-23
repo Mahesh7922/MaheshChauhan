@@ -24,6 +24,15 @@ export default function TerminalUI() {
     },
     projects: [
       {
+        name: "Welth [Finance Management App]",
+        github: "https://github.com/Mahesh7922/welth",
+        link: "https://welth-wine.vercel.app/",
+        description: [
+          "Built a full-stack personal finance platform with multi-account support, transaction tracking, budgets, recurring payments, and real-time analytics. Implemented secure authentication, server-side business logic, and rate-limited APIs using modern full-stack architecture.",
+          "Tech Stack: Next.js, React, Tailwind CSS, shadcn/ui, PostgreSQL, Prisma, Clerk, Inngest, Resend, Google Gemini AI, Vercel."
+        ]
+      },
+      {
         name: "HypeBazaar [E-Commerce Website]",
         github: "https://github.com/Mahesh7922/HypeBazaar.git",
         link: "https://hypebazaar.onrender.com/",
