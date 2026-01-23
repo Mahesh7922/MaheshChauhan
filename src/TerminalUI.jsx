@@ -19,8 +19,8 @@ export default function TerminalUI() {
     },
     skills: {
       languages: ["Python", "C", "C++", "HTML", "CSS", "JavaScript", "SQL"],
-      tools: ["Git", "VS Code", "MS Word", "Excel", "Canva", "Jupyter Notebook", "Google Colab", "PyCharm", "PowerBI", "MySQL", "SQLite", "MongoDB"],
-      technologies: ["Django", "Flask", "Node.js", "React.js", "Tailwind", "Bootstrap"]
+      tools: ["Git", "VS Code", "MS Word", "Excel", "Canva", "Jupyter Notebook", "Google Colab", "PyCharm", "PowerBI", "MySQL", "SQLite", "MongoDB", "Postman"],
+      technologies: ["Django", "Flask", "Node.js", "React.js", "Next.js","Tailwind", "Bootstrap"]
     },
     projects: [
       {
