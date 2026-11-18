@@ -44,7 +44,7 @@ export default function TerminalUI() {
       {
         name: "WellPredict [AI-Powered Disease Prediction WebApp]",
         github: "https://github.com/Mahesh7922/WellPredict",
-        link: "https://wellpredict.streamlit.app/",
+        link: "https://well-predict-fyp.vercel.app/",
         description: [
           "Developed an AI-powered disease prediction web app using machine learning models, enabling users to receive accurate health predictions based on medical data. Tech-Stack: Python, Streamlit, Django, HTML, CSS, LLM, Gemini.",
           "Integrated an OCR-based medical report analysis, a healthcare chatbot with voice-to-text, and a doctor consultancy feature for seamless appointment booking and report sharing."
